@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+</head>
+<body>
+    <h1>Please copy and paste a name of a Meme from the list:</h1>
+    <ol>
+        <h2>Name of memes</h2>
+        <li>Bad-Luck-Bear</li>
+        <li>Actual-Advice-Mallard</li>
+        <li>1st-World-Canadian-Problems</li>
+        <li>10-Guy</li>
+        <li>Advice-Dog</li>
+        <li>Bane-Permission</li>
+        <li>Because-Race-Car</li>
+    </ol>
+    <!--https://apimeme.com/meme?meme=10-Guy&top=Top+text&bottom=Bottom+text-->
+    <form action="https://apimeme.com/meme" method="get" target="_blank">
+        <label for="memeName">Meme Name:</label>
+        <input type="text" name="meme" id="memeName">
+        <br>
+        <label for="topText">Top Text</label>
+        <input type="text" name="top" id="topText">
+        <br>
+        <label for="bottomText">Bottom Text</label>
+        <input type="text" name="bottom" id="bottomText">
+        <button>Search</button>
+    </form>
+</body>
+</html>

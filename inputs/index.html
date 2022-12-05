@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 7 inputs</title>
+</head>
+<body>
+    <form action="https://formspree.io/f/maykreda" method="post">
+        <fieldset>
+            <legend>Personal info</legend>
+            <label for="name">Name: </label>
+            <input type="text" name="fname" id="name">  <br>
+
+            <label for="surname">Surname: </label>
+            <input type="text" name="fsurname" id="surname"> <br>
+
+            <label for="email">Email: </label>
+            <input type="email" name="femail" id="email"> <br>
+
+            <label for="date">Date of Birth: </label>
+            <input type="date" name="fdate" id="date" min="1940-01-01"> <br>
+
+            <label for="sexf">Fem: </label>
+            <input type="radio" name="fsex" id="sexf" value="Fem" checked>
+
+            <label for="sexm">Masc: </label>
+            <input type="radio" name="fsex" id="sexm" value="Masc"> <br>
+
+            <label for="country">Country: </label>
+            <select name="fcountry" id="country">
+                <option value="Brazil">Brazil</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="Israel">Israel</option>
+                <option value="Holand">Holand</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Profile</legend>
+            <label for="file"></label>
+            <input type="file" name="ffile" id="file" > <br>
+
+            <label for="nickName">NickName: </label>
+            <input type="text" name="fnickName" id="nickName"> <br>
+
+            <label for="color">Favorite Color: </label>
+            <input type="color" name="fcolor" id="color"> <br>
+
+            <label for="password"> Password: </label>
+            <input type="password" name="fpassword" id="password"> <br>
+            
+            <label for="freeText">Please leave us a Message:</label><br>
+            <textarea name="ffreeText" id="freeText" cols="30" rows="10"></textarea>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Favorite Animal</legend>
+            <label for="dog"> dog</label>
+            <input type="checkbox" name="" id="dog">
+            <label for="cat">cat</label>
+            <input type="checkbox" name="" id="cat">
+            <label for="bat">bat</label>
+            <input type="checkbox" name="" id="bat">
+            <label for="horse">horse</label>
+            <input type="checkbox" name="" id="horse">
+            <label for="cow">cow</label>
+            <input type="checkbox" name="" id="cow">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Personal Profile Questions</legend>
+            <label for="tall">How tall are you ? (cm)</label> 
+            <input type="number" name="ftall" id="tall" min="60" max="240"> <br>
+            <label for="happy">How happy are you ?</label>
+            <input type="range" name="fhappy" id="happy" min="1" max="5"> <br>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clean">
+
+    </form>
+    
+</body>
+</html>

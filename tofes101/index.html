@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Please fill the fields to fill automatically the Document 101 </h1>
+    <form action="https://formspree.io/f/xdojqejl" method="POST">
+        Tax Year: <br>
+        <input type="radio" name="ftax-year" id="tax-year2022" value="2022">
+        <label for="tax-year2022">2022</label>
+        <input type="radio" name="ftax-year" id="tax-year2023" value="2023">
+        <label for="tax-year2023">2023</label>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="name">Name: </label>
+            <input type="text" name="fname" id="name" size="15" required >
+
+            <label for="address">Address: </label>
+            <input type="text" name="faddress" id="address" size="15" required >
+
+            <label for="tel">Telefon: </label>
+            <input type="tel" name="ftel" id="tel" required >
+
+            <label for="deduction-num">Deduction file ID</label>
+            <input type="number" name="fdeduction-num" id="deduction-num" required >
+        </fieldset>
+        <fieldset>
+            <legend>Worker Details: </legend>
+            <label for="worker-name">Name: </label>
+            <input type="text" name="" id="worker-name" required>
+
+            <label for="worker-surname">Surname: </label>
+            <input type="text" name="fsurname" id="worker-surname" required>
+
+            <br>
+
+            Identification with: <br>
+            <input type="radio" name="identification-with" id="identification-with-id" value="ID">
+            <label for="identification-with-id">ID</label>
+
+            <input type="radio" name="identification-with" id="identification-with-passport" value="passport">
+            <label for="identification-with-passport">Passport</label>
+            <br>
+
+            <label for="identification-num">ID Number: </label> <br>
+            <input type="number" name="fidentification-num" id="identification-num" required>
+            <br>
+            <label for="id-img">ID img: </label> <br>
+            <input type="file" name="fId-img" id="id-img">
+            <br>
+            <label for="birth-date">Date of Birth: </label> <br>
+            <input type="date" name="fbirth" id="birth-date" required>
+            <br>
+            <label for="aliyah-date">Aliyah Date: </label> <br>
+            <input type="date" name="faliyah" id="aliyah-date">
+            <br>
+            <label for="city">City: </label>
+            <input type="text" name="fcity" id="city" required>
+
+            <label for="street">Street: </label>
+            <input type="text" name="fstreet" id="street" required>
+            <br>
+            <label for="house-num">House Number: </label>
+            <input type="number" name="fhouse-num" id="house-num" required>
+
+            <label for="zipcode">Zipcode: </label>
+            <input type="number" name="fzipcode" id="zipcode">
+            <br>
+            <label for="worker-tel-num">Telefon Number: </label>
+            <input type="number" name="fworker-tel-num" id="worker-tel-num" required> 
+            <br>
+            <label for="worker-email">Email: </label>
+            <input type="email" name="fworker-email" id="worker-email" required> 
+            <br>
+            Gender: <br>
+            <input type="radio" name="fgender" id="gender-fem" value="Fem">
+            <label for="gender-fem">Fem</label> 
+            <br>
+            <input type="radio" name="fgender" id="gender-masc" value="Masc">
+            <label for="gender-masc">Masc</label>
+            <br>
+            <br>
+
+            Family Situation:
+             <br>
+            <input type="radio" name="family-situation" id="worker-single" value="Single">
+            <label for="worker-single">Single</label>
+            <br>
+            <input type="radio" name="family-situation" id="worker-married" value="Married">
+            <label for="worker-married">Married</label>
+            <br>
+            <input type="radio" name="family-situation" id="worker-divorced" value="divorced">
+            <label for="worker-divorced">Divorced</label>
+            <br>
+            <input type="radio" name="family-situation" id="worker-widower" value="widower">
+            <label for="worker-widower">Widower</label>
+            <br>
+            <input type="radio" name="family-situation" id="worker-separated" value="separated">
+            <label for="worker-separated">Separated</label>
+            <br>
+            <label for="ok-assessor">Ok From Assessor</label> <br>
+            <input type="file" name="form-ok-assessor" id="ok-assessor">
+            <br>
+
+            Israel Citizen: 
+            <br>
+            <input type="radio" name="fisrael-citizen" id="israel-citizen-yes" value="Israelian Citizen">
+            <label for="israel-citizen-yes">Yes</label>
+            <br>
+            <input type="radio" name="fisrael-citizen" id="israel-citizen-no" value="NOT Israelian Citizen">
+            <label for="israel-citizen-no">No</label>
+            <br>
+            <br>
+
+            Kibbutz Citizen: 
+            <br>
+            <input type="radio" name="fkibbutz-citizen" id="kibbutz-citizen-yes">
+            <label for="kibbutz-citizen-yes">Yes</label>
+            <br>
+            <input type="radio" name="fkibbutz-citizen" id="kibbutz-citizen-no">
+            <label for="kibbutz-citizen-no">No</label>
+            <br>
+            <br>
+            Kuppat Cholim: 
+            <br>
+            <input type="radio" name="fkuppat-cholim" id="kuppat-cholim-yes">
+            <label for="kuppat-cholim-yes">Yes</label>
+            <br>
+            <input type="radio" name="fkuppat-cholim" id="kuppat-cholim-no">
+            <label for="kuppat-cholim-no">No</label>
+            <br><br>
+
+            If Yes which one: 
+            <br>
+            <select name="fworker-kuppat-cholim" id="worker-kuppat-cholim">
+                <option value="Maccabi">Maccabi</option>
+                <option value="Clalit">Clalit</option>
+                <option value="Meyuhedet">Meyuhedet</option>
+            </select>
+
+        </fieldset>
+        
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clean">
+    </form>
+</body>
+</html>

@@ -18,16 +18,21 @@
             <legend>Personal Details</legend>
             <label for="name">Name: </label>
             <input type="text" name="fname" id="name" size="15" required >
+            <br>
 
             <label for="address">Address: </label>
             <input type="text" name="faddress" id="address" size="15" required >
+            <br>
 
             <label for="tel">Telefon: </label>
             <input type="tel" name="ftel" id="tel" required >
+            <br>
 
-            <label for="deduction-num">Deduction file ID</label>
+            <label for="deduction-num">Deduction file ID:</label>
             <input type="number" name="fdeduction-num" id="deduction-num" required >
+            <br>
         </fieldset>
+        <br>
         <fieldset>
             <legend>Worker Details: </legend>
             <label for="worker-name">Name: </label>
@@ -35,28 +40,32 @@
 
             <label for="worker-surname">Surname: </label>
             <input type="text" name="fsurname" id="worker-surname" required>
-
             <br>
-
-            Identification with: <br>
+            <br>
+            <span>Identification with:</span>
+            <br>
             <input type="radio" name="identification-with" id="identification-with-id" value="ID">
             <label for="identification-with-id">ID</label>
 
             <input type="radio" name="identification-with" id="identification-with-passport" value="passport">
             <label for="identification-with-passport">Passport</label>
             <br>
-
+            <br>
             <label for="identification-num">ID Number: </label> <br>
             <input type="number" name="fidentification-num" id="identification-num" required>
+            <br>
             <br>
             <label for="id-img">ID img: </label> <br>
             <input type="file" name="fId-img" id="id-img">
             <br>
+            <br>
             <label for="birth-date">Date of Birth: </label> <br>
             <input type="date" name="fbirth" id="birth-date" required>
             <br>
+            <br>
             <label for="aliyah-date">Aliyah Date: </label> <br>
             <input type="date" name="faliyah" id="aliyah-date">
+            <br>
             <br>
             <label for="city">City: </label>
             <input type="text" name="fcity" id="city" required>
@@ -64,17 +73,21 @@
             <label for="street">Street: </label>
             <input type="text" name="fstreet" id="street" required>
             <br>
+            <br>
             <label for="house-num">House Number: </label>
             <input type="number" name="fhouse-num" id="house-num" required>
 
             <label for="zipcode">Zipcode: </label>
             <input type="number" name="fzipcode" id="zipcode">
             <br>
+            <br>
             <label for="worker-tel-num">Telefon Number: </label>
             <input type="number" name="fworker-tel-num" id="worker-tel-num" required> 
             <br>
+            <br>
             <label for="worker-email">Email: </label>
             <input type="email" name="fworker-email" id="worker-email" required> 
+            <br>
             <br>
             Gender: <br>
             <input type="radio" name="fgender" id="gender-fem" value="Fem">
@@ -102,10 +115,11 @@
             <input type="radio" name="family-situation" id="worker-separated" value="separated">
             <label for="worker-separated">Separated</label>
             <br>
+            <br>
             <label for="ok-assessor">Ok From Assessor</label> <br>
             <input type="file" name="form-ok-assessor" id="ok-assessor">
             <br>
-
+            <br>
             Israel Citizen: 
             <br>
             <input type="radio" name="fisrael-citizen" id="israel-citizen-yes" value="Israelian Citizen">
@@ -141,11 +155,189 @@
                 <option value="Clalit">Clalit</option>
                 <option value="Meyuhedet">Meyuhedet</option>
             </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend> 
+                Details of children who have not yet turned 19 in the tax year
+            </legend>
+            <label for="add-children">Please insert here ID image of the children</label>
+            <input type="file" name="fadd-children" id="add-children">
+            <br>
+            <br>
+            <span>or</span> 
+            <br>
+            <br>
+            <label for="child-name">Child name: </label>
+            <input type="text" name="fchild-name" id="child-name">
 
+            <label for="child-id-number">Child ID number: </label>
+            <input type="number" name="fchild-id-number" id="child-id-number">
+
+            <label for="child-date-birth">Child birth date: </label>
+            <input type="date" name="fchild-date-birth" id="child-date-birth">
+            <br>
+            <br>
+            <input type="checkbox" name="fchild-with-me" id="child-with-me" >
+            <label for="child-with-me">Child live with me</label>
+            <br>
+            <input type="checkbox" name="fchild-benefit" id="child-benefit">
+            <label for="child-benefit">
+                I receive child benefit from the National Insurance</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                Details of my income from this employer
+            </legend>
+            <span>I'm Receiving</span>
+            <br>
+            <input type="checkbox" name="fmonthly-payment" id="monthly-payment">
+            <label for="monthly-payment">Monthly payment</label>
+            <br>
+            <input type="checkbox" name="fsalary-side-work" id="salary-side-work">
+            <label for="salary-side-work">Salary from side work</label>
+            <br>
+            <input type="checkbox" name="fpartial-salary" id="partial-salary">
+            <label for="partial-salary">Partial Salary </label> 
+            <br>
+            <input type="checkbox" name="fdaily-worker" id="daily-worker">
+            <label for="daily-worker">
+                Wages - Daily worker</label>
+            <br>
+            <input type="checkbox" name="fallowance" id="allowance">
+            <label for="allowance">Allowance</label>
+            <br>
+            <input type="checkbox" name="fscholarship" id="scholarship">
+            <label for="scholarship">Scholarship</label>
+            <br>
+            <br>
+            <label for="date-start-working">Date of commencement of employment in the tax year</label>
+            <br>
+            <input type="date" name="fdate-start-working" id="date-start-working">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Details of other income</legend>
+            <span>Do you have another income ?</span>
+            <br>
+            <br>
+            <input type="radio" name="fanother-income" id="another-income-no">
+            <label for="another-income-no">I don't have another income</label>
+            <br>
+            <br>
+            <input type="radio" name="fanother-income" id="another-income-yes">
+            <label for="another-income-yes">Yes I have another income</label>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Relevant just if you are married</legend>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Changes during the year </legend>
+            <span>
+                This part, which appears on the printed form 101, is not relevant because it is a computerized form.
+
+                For any change that will apply to the details you filled in the form, the employer must be notified within one week of the date of the change, by filling out a new form in this system or by any means the employer allows.</span>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                I am requesting an exemption or tax credit for the following reasons
+            </legend>
+            <ol>
+                <li>
+                    <input type="checkbox" name="fexemption-israel-citizen" id="exemption-israel-citizen">
+                    <label for="exemption-israel-citizen">Citizien from Israel</label>
+                </li>
+                <br>
+                <li>
+                    <input type="checkbox" name="fexemption-disabled" id="exemption-disabled">
+                    <label for="exemption-disabled">I am 100% disabled / permanently blind</label>
+                </li>
+                <br>
+                <li>
+                    <input type="checkbox" name="fexemption-settlement-citizen" id="exemption-settlement-citizen">
+                    <label for="exemption-settlement-citizen">I am a permanent resident of a qualifying settlement. Me and my first degree family members, live in the settlement and I don't have another "life center".</label>
+                </li>
+                <br>
+                <li>
+                    <input type="checkbox" name="fexemption-new-immigrant" id="exemption-new-immigrant">
+                    <label for="exemption-new-immigrant">I am a new immigrant</label>
+                </li>
+                <br>
+                <li>
+                    <input type="checkbox" name="fexemption-spouse-no-income" id="exemption-spouse-no-income">
+                    <label for="exemption-spouse-no-income">For my spouse who lives with me and has no income in the tax year</label>
+                </li>
+                <br>    
+                <li>
+                    <input type="checkbox" name="fexemption-single-parent" id="exemption-single-parent-separately">
+                    <label for="exemption-single-parent-separately">I am a single parent living separately</label>
+                </li>
+                <br>
+                <li>
+                    <input type="checkbox" name="fexemption-part-c" id="exemption-part-c">
+                    <label for="exemption-part-c">In respect of my children listed in part C</label>
+                </li>
+                <br>
+                <li>
+                    <input type="checkbox" name="fexemption-toddlers-children" id="exemption-toddlers-children">
+                    <label for="exemption-toddlers-children">For the children of the toddlers</label>
+                </li>
+                <br>
+                <li>
+                    <input type="checkbox" name="fexemption-single-parent" id="exemption-single-parent-children-custody">
+                    <label for="exemption-single-parent-children-custody">
+                        I am a single parent to my children in my custody (listed in section 7 and 8 above)</label>
+                </li>
+                <br>
+                <li>
+                    <input type="checkbox" 
+                    name="fexemption-parent-without-child-but-helps-finances"
+                    id="exemption-parent-without-child-but-helps-finances">
+                    <label for="exemption-parent-without-child-but-helps-finances">
+                        Regarding my children who are not in my possession listed in part C and I participate in their finances.
+                    </label>
+                </li>
+                <br>
+                <li>
+                    <input type="checkbox" name="fexemption-disabled-children-under19" id="exemption-disabled-children-under19">
+                    <label for="exemption-disabled-children-under19">
+                        I am a parent of children with disabilities who have not yet turned 19, for whom I receive a disabled child benefit from the National Insurance Institute</label>
+                </li>
+                <br>
+                <li>
+                    <input type="checkbox" name="" id="">
+                    <label for=""></label>
+                </li>
+                <br>
+                <li>
+                    <input type="checkbox" name="" id="">
+                    <label for=""></label>
+                </li>
+                <br>
+                <li>
+                    <input type="checkbox" name="" id="">
+                    <label for=""></label>
+                </li>
+                <br>
+                <li>
+                    <input type="checkbox" name="" id="">
+                    <label for=""></label>
+                </li>
+            </ol>
         </fieldset>
         
         <input type="submit" value="Submit">
         <input type="reset" value="Clean">
     </form>
+
+
+    <br><br><br><br><br><br><br>
+
+
 </body>
 </html>

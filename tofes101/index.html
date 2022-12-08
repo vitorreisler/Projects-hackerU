@@ -230,7 +230,6 @@
             <label for="another-income-yes">Yes I have another income</label>
         </fieldset>
         <br>
-        <br>
         <fieldset>
             <legend>Relevant just if you are married</legend>
         </fieldset>
@@ -310,34 +309,49 @@
                 </li>
                 <br>
                 <li>
-                    <input type="checkbox" name="" id="">
-                    <label for=""></label>
+                    <input type="checkbox" name="fexemption-alimony" id="exemption-alimony">
+                    <label for="exemption-alimony">For alimony to my ex-spouse</label>
                 </li>
                 <br>
                 <li>
-                    <input type="checkbox" name="" id="">
-                    <label for=""></label>
+                    <input type="checkbox" name="fexemption-under18" id="exemption-under18">
+                    <label for="exemption-under18">I or my partner have turned 16 years old and I or my partner have not yet turned 18 years old in the tax year</label>
                 </li>
                 <br>
                 <li>
-                    <input type="checkbox" name="" id="">
-                    <label for=""></label>
+                    <input type="checkbox" name="fexemption-ex-army" id="exemption-ex-army">
+                    <label for="exemption-ex-army"> I am a discharged soldier / I served in national service </label>
                 </li>
                 <br>
                 <li>
-                    <input type="checkbox" name="" id="">
-                    <label for=""></label>
+                    <input type="checkbox" name="fexemption-student" id="exemption-student">
+                    <label for="exemption-student">In respect of graduation for an academic degree, graduation from an internship or graduation from professional studies</label>
                 </li>
             </ol>
         </fieldset>
-        
+        <br>
+        <fieldset>
+            <legend> Coordination tax </legend>
+            <input type="checkbox" name="fcoordination-tax" id="coordination-tax">
+            <label for="coordination-tax">Adding/editing coordination tax</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Disclaimer</legend>
+            <span>
+                I declare that the details I provided in this form are complete and correct.
+                I know that omitting or providing incorrect information is a violation of the Income Tax Ordinance.
+
+                I undertake to notify the employer of any changes that will apply to my personal details and the details above within a week from the date of the change.
+                <br>
+                The applicant's signature: 
+            </span>
+            <br><br>
+            <input type="file" name="fsignature" id="signature">
+        </fieldset>
+        <br>
         <input type="submit" value="Submit">
         <input type="reset" value="Clean">
     </form>
-
-
-    <br><br><br><br><br><br><br>
-
-
 </body>
 </html>

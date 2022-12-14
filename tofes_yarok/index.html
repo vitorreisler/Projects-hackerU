@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>טופס ירוק</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>שימו לב האתר הזה בנוי אך ורקללימודים הטופס המקורי נמצא ב: </h1>
         <a href="https://govforms.gov.il/mw/forms/RishumTheory@mot.gov.il#" target="_blank">לטופס ירוק המקורי</a>
+       
+    </header>
+    <main>
         <h2>
             בקשה להוצאת רישיון נהיגה
         </h2>
-    </header>
-    <main>
         <section>
             <form action="https://formspree.io/f/mgeqgjnk" method="post">
             <fieldset>
@@ -24,14 +28,27 @@
                 </legend>
                 <p> שדות המסומנים בכוכבית (*) הם שדות חובה </p>
                     <p>פרטים אישיים</p>
-                    <label class="on-input" for="user-id-number">מספר זהות</label>
-                    <input type="number" name="ftel-num" id="user-id-number">
+                    <label class="on-input" for="user-id-number">
+                        מספר זהות
+                    </label>
+                    <input type="number" 
+                        name="user-id-number"
+                        id="user-id-number" 
+                        minlength="1" 
+                        maxlength="9" 
+                        required >
 
                     <label class="on-input" for="user-name">שם פרטי</label>
-                    <input type="text" name="fuser-name" id="user-name">
+                    <input type="text" 
+                    name="fuser-name" 
+                    id="user-name" 
+                    required>
 
                     <label class="on-input" for="user-surname">שם משפחה</label>
-                    <input type="text" name="fuser-surname" id="user-surname">
+                    <input type="text" 
+                    name="fuser-surname" 
+                    id="user-surname" 
+                    required>
 
                 </fieldset>
 
@@ -43,26 +60,39 @@
                     <p>מספר הטלפון הנייד והדואר האלקטרוני ישמשו למשלוח הודעות ועדכונים שוטפים בדבר סטטוס הטיפול בבקשה</p>
 
                     <label class="on-input" for="user-cellphone">טלפון נייד</label>
-                    <input type="number" name="fuser-cellphone" id="user-cellphone">
+                    <input type="number" 
+                    name="fuser-cellphone" 
+                    id="user-cellphone">
 
                     <label class="on-input" for="extra-user-cellphone">טלפון נוסף</label>
-                    <input type="number" name="fextra-user-cellphone" id="extra-user-cellphone">
+                    <input type="number" 
+                        name="fextra-user-cellphone"
+                        id="extra-user-cellphone">
 
                     <label class="on-input" for="user-email">דואר אלקטרוני</label>
-                    <input type="email" name="fuser-email" id="user-email">
+                    <input type="email" 
+                    name="fuser-email" 
+                    id="user-email">
 
                     <label class="on-input" for="aut-user-email">אימות דואר אלקטרוני </label>
-                    <input type="email" name="faut-user-email" id="aut-user-email">
+                    <input type="email" 
+                    name="faut-user-email" 
+                    id="aut-user-email">
                     <br><br>
 
-                    <input type="checkbox" name="fnotifications-economy" id="notifications-economy">
+                    <input type="checkbox" 
+                        name="fnotifications-economy" 
+                        id="notifications-economy">
                     <label for="notifications-economy">ידוע לי כי מספר הטלפון הנייד והדואר האלקטרוני ישמשו למשלוח הודעות ועדכונים שוטפים בדבר סטטוס הטיפול בבקשה</label>
                     <br><br>
-                    <input type="checkbox" name="fconsent-ministry-transport" id="consent-ministry-transport">
-                    <label for="consent-ministry-transport">הריני נותן הסכמתי מרצון לעשות שימוש בפרטי ההתקשרות המעודכנים שנמסרו על ידי לכל התקשרות נוספת של משרד התחבורה עימי.</label>
-                </fieldset>
-                <br><br>
 
+                    <input type="checkbox" 
+                    name="fconsent-ministry-transport"
+                    id="consent-ministry-transport">
+                    <label for="consent-ministry-transport">הריני נותן הסכמתי מרצון לעשות שימוש בפרטי ההתקשרות המעודכנים שנמסרו על ידי לכל התקשרות נוספת של משרד התחבורה עימי.</label>
+                    <br><br>
+                </fieldset>
+                
                 <fieldset>
                     <legend>
                         הצהרה
@@ -82,16 +112,24 @@
                     </p>
 
                     <label class="on-input" for="user-name-second-page">שם פרטי</label>
-                    <input type="text" name="fuser-name-second-page" id="user-name-second-page">
+                    <input type="text" 
+                    name="fuser-name-second-page"
+                    id="user-name-second-page">
 
                     <label class="on-input" for="user-surname-second-page">שם משפחה</label>
-                    <input type="text" name="fuser-surname-second-page" id="user-surname-second-page">
+                    <input type="text" 
+                    name="fuser-surname-second-page"
+                    id="user-surname-second-page">
 
                     <label class="on-input" for="user-id-number-second-page">מספר זהות</label>
-                    <input type="number" name="fuser-id-number-second-page" id="user-id-number-second-page">
+                    <input type="number" 
+                    name="fuser-id-number-second-page"
+                    id="user-id-number-second-page">
 
                     <label class="on-input" for="document-completion-date">תאריך</label>
-                    <input type="date" name="fdocument-completion-date" id="document-completion-date">
+                    <input type="date" 
+                    name="fdocument-completion-date"
+                    id="document-completion-date">
 
                     <p>
                         לחיצה על כפתור "לשלב הבא" מהווה אישור לאמור לעיל 
@@ -113,18 +151,32 @@
                     <br>
                     <label class="on-input" for="">האם עברת אירוע של איבוד הכרה ב - 5 השנים האחרונות?
                     </label>
-                    <input type="radio" name="loss-consciousness" id="loss-consciousness-yes" value="on">
-                    <label for="loss-consciousness-yes"> כן</label>
-                    <input type="radio" name="loss-consciousness" id="loss-consciousness-no" value="off">
-                    <label for="loss-consciousness-no"> לא</label>
+                    <input type="radio" 
+                    name="loss-consciousness" 
+                    id="loss-consciousness-yes" 
+                    value="on">
+                    <label class="radio-yes" for="loss-consciousness-yes"> כן</label>
+
+                    <input type="radio" 
+                    name="loss-consciousness" 
+                    id="loss-consciousness-no" 
+                    value="off">
+                    <label  for="loss-consciousness-no"> לא</label>
                     <br>
                     <br>
 
                     <label class="on-input" for="epilepsy">האם ניתנה לך אבחנה רפואית כי אתה חולה במחלת הכפיון (אפילפסיה)?
                     </label>
-                    <input type="radio" name="epilepsy" id="epilepsy-on" value="on">
-                    <label for="epilepsy-on">כן</label>
-                    <input type="radio" name="epilepsy" id="epilepsy-off" value="off">
+                    <input type="radio" 
+                    name="epilepsy" 
+                    id="epilepsy-on" 
+                    value="on">
+                    <label class="radio-yes" for="epilepsy-on">כן</label>
+
+                    <input type="radio" 
+                    name="epilepsy" 
+                    id="epilepsy-off" 
+                    value="off">
                     <label for="epilepsy-off">לא</label>
                     <br>
                     <br>
@@ -132,9 +184,17 @@
                     <label class="on-input" for="">
                         האם עברת בעברך אירוע מוחי ( STROKE) או אירוע מוחי חולף (TIA)?
                     </label>
-                    <input type="radio" name="stroke" id="stroke-on" value="on" >
-                    <label for="stroke-on">כן</label>
-                    <input type="radio" name="stroke" id="stroke-off" value="off">
+                    <input type="radio"
+                    name="stroke" 
+                    id="stroke-on" 
+                    value="on" >
+                    <label class="radio-yes" for="stroke-on">כן</label>
+                     
+
+                    <input type="radio"
+                    name="stroke" 
+                    id="stroke-off" 
+                    value="off">
                     <label for="stroke-off">לא</label>
                     <br>
                     <br>
@@ -142,9 +202,17 @@
                     <label class="on-input" for="ADHD">
                         האם ניתנה לך אבחנה רפואית כי אתה סובל מהפרעת קשב וריכוז (ADD,ADHD)?
                     </label>
-                    <input type="radio" name="ADHD" id="adhd-on" value="on">
-                    <label for="adhd-on">כן</label>
-                    <input type="radio" name="ADHD" id="adhd-off" value="off">
+                    <input type="radio" 
+                    name="ADHD" 
+                    id="adhd-on" 
+                    value="on">
+                    <label class="radio-yes" for="adhd-on">כן</label>
+
+                    <input type="radio" 
+                    name="ADHD" 
+                    id="adhd-off" 
+                    
+                    alue="off">
                     <label for="adhd-off">לא</label>
                     <br>
                     <br>
@@ -153,9 +221,16 @@
                     <label class="on-input" for="suffer-impaired-sensation">
                         האם ניתנה לך אבחנה רפואית כי אתה סובל מהפרעה בתחושה, טווח תנועה או כוח גס של הגפים?
                     </label>
-                    <input type="radio" name="suffer-impaired-sensation" id="suffer-impaired-sensation-on" value="on">
-                    <label for="suffer-impaired-sensation-on">כן</label>
-                    <input type="radio" name="suffer-impaired-sensation" id="suffer-impaired-sensation-off" value="off">
+                    <input type="radio"
+                    name="suffer-impaired-sensation" 
+                    id="suffer-impaired-sensation-on" 
+                    value="on">
+                    <label class="radio-yes" for="suffer-impaired-sensation-on">כן</label>
+
+                    <input type="radio" 
+                    name="suffer-impaired-sensation" 
+                    id="suffer-impaired-sensation-off" 
+                    value="off">
                     <label for="suffer-impaired-sensation-off">לא</label>
                     <br>
                     <br>
@@ -163,9 +238,16 @@
                     <label class="on-input" for="heart-disease">
                         האם ניתנה לך אבחנה רפואית כי אתה חולה במחלת לב?
                     </label>
-                    <input type="radio" name="heart-disease" id="heart-disease-on" value="on">
-                    <label for="heart-disease-on">כן</label>
-                    <input type="radio" name="heart-disease" id="heart-disease-off" value="off">
+                    <input type="radio" 
+                    name="heart-disease" 
+                    id="heart-disease-on" 
+                    value="on">
+                    <label class="radio-yes" for="heart-disease-on">כן</label>
+
+                    <input type="radio" 
+                    name="heart-disease" 
+                    id="heart-disease-off" 
+                    value="off">
                     <label for="heart-disease-off">לא</label>
                     <br>
                     <br>
@@ -174,124 +256,224 @@
                     <label class="on-input" for="arrhythimia">
                         האם ניתנה לך אבחנה רפואית כי אתה סובל מהפרעה בקצב הלב (ARRHYTHMIA)?
                     </label>
-                    <input type="radio" name="arrhythimia" id="arrhythimia-on" value="on">
-                    <label for="arrhythimia-on">כן</label>
-                    <input type="radio" name="arrhythimia" id="arrhythimia-off" value="off">
+                    <input type="radio"
+                    name="arrhythimia" 
+                    id="arrhythimia-on" 
+                    value="on">
+                    <label class="radio-yes" for="arrhythimia-on">כן</label>
+
+                    <input type="radio" 
+                    name="arrhythimia" 
+                    id="arrhythimia-off" 
+                    value="off">
                     <label for="arrhythimia-off">לא</label>
                     <br>   
                     <br>
+
                     <label class="on-input" for="pacemaker">
                         האם הושתל לך קוצב לב (PACEMAKER) או קוצב (DEFIBRILLATOR)?
                     </label>
-                    <input type="radio" name="pacemaker" id="pacemaker-on" value="on">
-                    <label for="pacemaker-on">כן</label>
-                    <input type="radio" name="pacemaker" id="pacemaker-off" value="off">
+                    <input type="radio"
+                    name="pacemaker" 
+                    id="pacemaker-on" 
+                    value="on">
+                    <label class="radio-yes" for="pacemaker-on">כן</label>
+
+
+                    <input type="radio" 
+                    name="pacemaker" 
+                    id="pacemaker-off" 
+                    value="off">
                     <label for="pacemaker-off">לא</label>
                     <br>
                     <br>
                     
                     <label class="on-input" for="prevent-for-driving">האם ידוע לך על סיבה רפואית אחרת או נוספת על האמור בהצהרה זו שיכולה להפריע לך או למנוע ממך לנהוג?
                     </label>
-                    <input type="radio" name="prevent-for-driving" id="prevent-for-driving-on" value="on">
-                    <label for="prevent-for-driving-on">כן</label>
-                    <input type="radio" name="prevent-for-driving" id="prevent-for-driving-off" value="off">
+                    <input type="radio" 
+                    name="prevent-for-driving" 
+                    id="prevent-for-driving-on" 
+                    value="on">
+                    <label class="radio-yes" for="prevent-for-driving-on">כן</label>
+
+                    <input type="radio" 
+                    name="prevent-for-driving" 
+                    id="prevent-for-driving-off" 
+                    value="off">
                     <label for="prevent-for-driving-off">לא</label>
                     <br>
                     <br>
                         
                     <label class="on-input" for="diabetes-type1">האם ניתנה לך אבחנה רפואית כי אתה חולה בסוכרת מטיפוס 1 (TYPE 1DM - נעורים)?
                     </label>
-                    <input type="radio" name="diabetes" id="diabetes-type1-on" value="on">
-                    <label for="diabetes-type1-on">כן</label>
-                    <input type="radio" name="diabetes" id="diabetes-type1-off" value="off">
+                    <input type="radio"
+                    name="diabetes" 
+                    id="diabetes-type1-on" 
+                    value="on">
+                    <label class="radio-yes" for="diabetes-type1-on">כן</label>
+
+                    <input type="radio" 
+                    name="diabetes" 
+                    id="diabetes-type1-off" 
+                    value="off">
                     <label for="diabetes-type1-off">לא</label>
                     <br>
                     <br>
 
                     <label class="on-input" for="diabetes-type2">האם נתנה לך אבחנה כי אתה חולה בסוכרת מטיפוס 2 (TYPE2DM מבוגרים)?
                     </label>
-                    <input type="radio" name="diabetes-type2" id="diabetes-type2-on" value="on">
-                    <label for="diabetes-type2-on">כן</label>
-                    <input type="radio" name="diabetes-type2" id="diabetes-type2-off" value="off">
+
+                    <input type="radio"
+                    name="diabetes-type2" 
+                    id="diabetes-type2-on" 
+                    value="on">
+                    <label class="radio-yes" for="diabetes-type2-on">כן</label>
+
+                    <input type="radio" 
+                    name="diabetes-type2" 
+                    id="diabetes-type2-off" 
+                    value="off">
                     <label for="diabetes-type2-off">לא</label>
                     <br>
                     <br>
 
                     <label class="on-input" for="">האם פסיכיאטר או פסיכולוג נתן לך אבחנה רפואית כי אתה סובל מבעיה בתחום בריאות הנפש?
                     </label>
-                    <input type="radio" name="mental-health-problem" id="mental-health-problem-on" value="on">
-                    <label for="mental-health-problem-on">כן</label>
-                    <input type="radio" name="mental-health-problem" id="mental-health-problem-off" value="off">
+                    <input type="radio"
+                    name="mental-health-problem" 
+                    id="mental-health-problem-on"
+                    
+                    value="on">
+                    <label class="radio-yes" for="mental-health-problem-on">כן</label>
+
+                    <input type="radio" 
+                    name="mental-health-problem" 
+                    id="mental-health-problem-off" 
+                    value="off">
                     <label for="mental-health-problem-off">לא</label>
                     <br>
                     <br>
 
                     <label class="on-input" for="fall-asleep-day">האם אתה חש עייפות ורצון להירדם במהלך היום? ? </label>
-                    <input type="radio" name="fall-asleep-day" id="fall-asleep-day-on" value="on">
-                    <label for="fall-asleep-day-on">כן</label>
-                    <input type="radio" name="fall-asleep-day" id="fall-asleep-day-off" value="off">
+                    <input type="radio" 
+                    name="fall-asleep-day" 
+                    id="fall-asleep-day-on" 
+                    value="on">
+                    <label class="radio-yes" for="fall-asleep-day-on">כן</label>
+
+                    <input type="radio" 
+                    name="fall-asleep-day" 
+                    id="fall-asleep-day-off" 
+                    value="off">
                     <label for="fall-asleep-day-off">לא</label>
                     <br>
                     <br>
 
                     <label class="on-input" for="drugs">האם אתה נוטל תרופות מרשם באופן קבוע? (למעט תרופות הקשורות להפרעות קשב וריכוז, אמצעי מניעה)?
                     </label>
-                    <input type="radio" name="drugs" id="drugs-on" value="on">
-                    <label for="drugs-on">כן</label>
-                    <input type="radio" name="drugs" id="drugs-off" value="off">
+                    <input type="radio" 
+                    name="drugs" 
+                    id="drugs-on" 
+                    value="on">
+                    <label class="radio-yes" for="drugs-on">כן</label>
+
+                    <input type="radio" 
+                    name="drugs" 
+                    id="drugs-off" 
+                    value="off">
                     <label for="drugs-off">לא</label>
                     <br>
                     <br>
 
                     <label class="on-input" for="vertigo">האם ניתנה לך אבחנה רפואית כי אתה סובל מסחרחורת (VERTIGO)?
                     </label>
-                    <input type="radio" name="vertigo" id="vertigo-on" value="on">
-                    <label for="vertigo-on">כן</label>
-                    <input type="radio" name="vertigo" id="vertigo-off" value="off">
+                    <input type="radio"                    name="vertigo" 
+                    id="vertigo-on" 
+                    value="on">
+                    <label class="radio-yes" for="vertigo-on">כן</label>
+
+                    <input type="radio" 
+                    name="vertigo" 
+                    id="vertigo-off" 
+                    value="off">
                     <label for="vertigo-off">לא</label>
                     <br>
                     <br>
 
                     <label class="on-input" for="head-injury">האם סבלת מחבלת ראש בשנה האחרונה? ? </label>
-                    <input type="radio" name="head-injury" id="head-injury-on" value="on">
-                    <label for="head-injury-on">כן</label>
-                    <input type="radio" name="head-injury" id="head-injury-off" value="off">
+                    <input type="radio"
+                    name="head-injury" 
+                    id="head-injury-on" 
+                    value="on">
+                    <label class="radio-yes" for="head-injury-on">כן</label>
+
+                    <input type="radio" 
+                    name="head-injury" 
+                    id="head-injury-off" 
+                    value="off">
                     <label for="head-injury-off">לא</label>
                     <br>
                     <br>
 
                     <label class="on-input" for="surgery">האם עברת ניתוח ראש בעברך?
                     </label>
-                    <input type="radio" name="surgery" id="surgery-on" value="on">
-                    <label for="surgery-on">כן</label>
-                    <input type="radio" name="surgery" id="surgery-off" value="off">
+                    <input type="radio"                    name="surgery" 
+                    id="surgery-on" 
+                    value="on">
+                    <label class="radio-yes" for="surgery-on">כן</label>
+
+                    <input type="radio" 
+                    name="surgery" 
+                    id="surgery-off" 
+                    value="off">
                     <label for="surgery-off">לא</label>
                     <br>
                     <br>
 
                     <label class="on-input" for="disease-of-the-nervous-system">האם ניתנה לך אבחנה רפואית כי אתה סובל ממחלה של מערכת העצבים (למשל פרקינסון, טרשת נפוצה וכיוצא באלה)?
                     </label>
-                    <input type="radio" name="disease-of-the-nervous-system" id="disease-of-the-nervous-system-on" value="on">
-                    <label for="disease-of-the-nervous-system-on">כן</label>
-                    <input type="radio" name="disease-of-the-nervous-system" id="disease-of-the-nervous-system-off" value="off">
+                    <input type="radio"
+                    name="disease-of-the-nervous-system" 
+                    id="disease-of-the-nervous-system-on" 
+                    value="on">
+                    <label class="radio-yes" for="disease-of-the-nervous-system-on">כן</label>
+
+                    <input type="radio" 
+                    name="disease-of-the-nervous-system" 
+                    id="disease-of-the-nervous-system-off" 
+                    value="off">
                     <label for="disease-of-the-nervous-system-off">לא</label>
                     <br>
                     <br>
 
                     <label class="on-input" for="memory-problem">האם ניתנה לך אבחנה כי אתה סובל מבעיה בזיכרון או בריכוז?
                     </label>
-                    <input type="radio" name="memory-problem" id="memory-problem-on" value="on">
-                    <label for="memory-problem-on">כן</label>
-                    <input type="radio" name="memory-problem" id="memory-problem-off" value="off">
+                    <input type="radio"
+                    name="memory-problem" 
+                    id="memory-problem-on" 
+                    value="on">
+                    <label class="radio-yes" for="memory-problem-on">כן</label>
+
+                    <input type="radio" 
+                    name="memory-problem" 
+                    id="memory-problem-off" 
+                    value="off">
                     <label for="memory-problem-off">לא</label>
                     <br>
                     <br>
 
                     <label class="on-input" for="cancer">האם ניתנה לך אבחנה רפואית כי אתה חולה בסרטן?
                     </label>
-                    <input type="radio" name="cancer" id="cancer-on" value="on">
-                    <label for="cancer-on">כן</label>
-                    <input type="radio" name="cancer" id="cancer-off" value="off">
+                    <input type="radio"
+                    name="cancer" 
+                    id="cancer-on" 
+                    value="on">
+                    <label class="radio-yes" for="cancer-on">כן</label>
+
+                    <input type="radio" 
+                    name="cancer" 
+                    id="cancer-off" 
+                    value="off">
                     <label for="cancer-off">לא</label>
                     <br>
                     <br>
@@ -299,40 +481,45 @@
                     <label class="on-input" for="sleep-disordered-breathing">האם ניתנה לך אבחנה רפואית כי אתה סובל מהפרעת נשימה בשינה?
                     </label>
                     <input 
-                    type="radio" 
+                    type="radio"
                     name="sleep-disordered-breathing" 
                     id="sleep-disordered-breathing-on" 
                     value="on">
-                    <label for="sleep-disordered-breathing-on">כן</label>
-                    <input type="radio" name="sleep-disordered-breathing" id="sleep-disordered-breathing-off" value="off">
+                    <label class="radio-yes" for="sleep-disordered-breathing-on">כן</label>
+
+                    <input type="radio" 
+                    name="sleep-disordered-breathing" 
+                    id="sleep-disordered-breathing-off" 
+                    value="off">
                     <label for="sleep-disordered-breathing-off">לא</label>
                     <br>
                     <br>
 
                     <label class="on-input" for="regular-medication">האם ניתנה לך אבחנה רפואית כי אתה סובל ממחלת ריאות הדורשת טיפול תרופתי קבוע?
                     </label>
-                    <input type="radio" name="regular-medication" id="regular-medication-on" value="on">
-                    <label for="regular-medication-on">כן</label>
-                    <input type="radio" name="regular-medication" id="regular-medication-off" value="off">
+                    <input type="radio"
+                    name="regular-medication" 
+                    id="regular-medication-on" 
+                    value="on">
+                    <label class="radio-yes" for="regular-medication-on">כן</label>
+
+                    <input type="radio" 
+                    name="regular-medication" 
+                    id="regular-medication-off" 
+                    value="off">
                     <label for="regular-medication-off">לא</label>
 
                     <h2>צירוף מסמכים</h2>
                     <p>
                         אנא הצג מסמכים עדכניים תומכים לשאלות הבאות (אישור רפואי על מצבך הבריאותי מ3 החודשים האחרונים, רשימת תרופות עדכניות, הסבר):
-
                     </p>
-                    <label for=""></label>
-                    <input type="file" name="" id="" >
 
+                    <input type="file" name="fadd-documentation" id="add-documentation">
                 </fieldset>
-
-
                 <input type="submit" value="Submit">
                 <input type="reset" value="Clean">
             </form>
-
         </section>
     </main>
-    
 </body>
 </html>

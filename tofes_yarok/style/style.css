@@ -55,3 +55,17 @@ p {padding: 15px 0px 10px 0px;}
 .radio-yes {
 padding-left: 10px;
 }
+
+input.final-button {
+    background-color: rgba(255, 255, 0, 0.699);
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+input.final-button:hover {
+    background-color: rgba(255, 255, 0, 0.89);
+    transition: .5s;
+}

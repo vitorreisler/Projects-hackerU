@@ -38,6 +38,10 @@ ul {
     padding: 10px;    
 }
 
+label {
+    display: block;
+}
+
 
 header > div.imagem-header, header > div.titulo-header {
     display: inline-block;
@@ -136,5 +140,37 @@ div.footer a:hover {
     color: #a96efc;
 }
 
+ 
+section.contact-us {
+    width: 100%;
+    margin-top: 25px;
+    background-color:rgba(6, 224, 6, 0.541);
+    border-radius: 10px;
+    padding: 15px 10px;
+    
 
+}
+label {
+    color: #9b63e9;
+    padding: 5px 0 5px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
 
+input.geral-button {
+    border: 1px solid black;
+    width: 160px;
+    background-color: #832FF7;
+    line-height: 30px;
+    padding: 10px;
+    border-radius: 8px;
+    color: rgba(6, 224, 6, 0.788);
+    font-weight: 600;
+}
+
+input.geral-button:hover {
+    background-color:rgba(6, 224, 6, 0.788);
+    font-size: 16px;
+    color:  #832FF7;
+    transition: .5s;
+}

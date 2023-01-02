@@ -38,17 +38,6 @@ ul {
     padding: 10px;    
 }
 
-label {
-    display: block;
-}
-
-hr {
-    margin-top: 20px;
-    width: 30%;
-    margin-inline: auto;
-
-}
-
 header > div.imagem-header, header > div.titulo-header {
     display: inline-block;
     
@@ -85,17 +74,6 @@ main > section.nav {
     
 }
 
-main > section.content {
-    display: inline-block;
-    width: 70%;
-}
-
-section.content > p {
-    padding: 10px;
-    margin-block: 7px;
-    color: whitesmoke;
-} 
-
 main > section.nav a {
     display: block;
     line-height: 30px;
@@ -113,69 +91,13 @@ main > section.nav a:hover {
     transition: .5s
 }
 
-main > section.content a {
-    border: 1px solid black;
-    line-height: 30px;
+main > section.content {
+    display: inline-block;
+    width: 70%;
+}
+
+section.content > p {
     padding: 10px;
-    border-radius: 8px;
-    color: white;
-    font-weight: 600;
-    
-}
-
-main > section.content a:hover {
-    background-color: #449040;
-    color: black;
-    transition: .5s
-}
-
-footer {
-    margin-top: 20px;
-}
-
-div.footer ul {
-    background-color: rgba(6, 224, 6, 0.788);
-    padding-inline: 15px;
-}
-div.footer a {
-font-weight: 600;
-
-}
-div.footer a:hover {
-    color: #a96efc;
-}
-
- 
-section.contact-us {
-    width: 100%;
-    margin-top: 25px;
-    background-color:#606d80;
-    border-radius: 10px;
-    padding: 15px 10px;
-    
-
-}
-label {
-    color: white;
-    padding: 5px 0 5px 0;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-input.geral-button {
-    border: 1px solid black;
-    width: 160px;
-    background-color: #2a782a;
-    line-height: 30px;
-    padding: 10px;
-    border-radius: 8px;
-    color: rgba(6, 224, 6, 0.788);
-    font-weight: 600;
-}
-
-input.geral-button:hover {
-    background-color:#449040;
-    font-size: 16px;
-    color:  black;
-    transition: .5s;
+    margin-block: 7px;
+    color: whitesmoke;
 }

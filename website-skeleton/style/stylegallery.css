@@ -7,7 +7,7 @@
     body {
         margin: 0;
         width: 96vw;
-        background-color: black;
+        background-color: #1f1f20;
     }
     main {
         width: 80vw;
@@ -20,20 +20,25 @@
         text-decoration: none;
     }
 
+    ul {
+    list-style: none;
+    padding: 10px;    
+}
+
     h2 {
-        color: #832FF7;
+        color: #77bf6c;
     }
     main > section.nav {
         display: inline-block;
         width: 18%;
         vertical-align: top;
-        background-color: black;
+        background-color: #1f1f20;
         
     }
 
     main > section.nav a {
         display: block;
-        border: 1px solid black;
+        ;
         line-height: 30px;
         padding: 10px;
         border-radius: 8px;
@@ -43,7 +48,7 @@
         
     }
     main > section.nav a:hover {
-        background-color: #832FF7;
+        background-color: #449040;
         color: black;
         transition: .5s
     }
@@ -52,8 +57,7 @@
     div.gallery {
         display: inline-block;
         width: 80%;
-        border: 1px solid white;
-        
+   
     }
 
     div.gallery > img {
@@ -61,8 +65,7 @@
         border-radius: 15%;
         padding: 15px;
         opacity: 0.8;
-        
-        
+         
     }
 
     div.gallery > img:hover {

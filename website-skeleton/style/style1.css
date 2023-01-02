@@ -1,0 +1,82 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    body {
+        margin: 0;
+        width: 96vw;
+        background-color: black;
+    }
+    main {
+        width: 80vw;
+        /*border: 2px solid red;*/
+        margin-inline: auto;
+        margin-top: 50px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    h2 {
+        color: #832FF7;
+    }
+    main > section.nav {
+        display: inline-block;
+        width: 18%;
+        vertical-align: top;
+        background-color: black;
+        
+    }
+
+    main > section.nav a {
+        display: block;
+        border: 1px solid black;
+        line-height: 30px;
+        padding: 10px;
+        border-radius: 8px;
+        color: white;
+        font-weight: 600;
+        margin-block: 5px;
+        
+    }
+    main > section.nav a:hover {
+        background-color: #832FF7;
+        color: black;
+        transition: .5s
+    }
+    
+
+    div.gallery {
+        display: inline-block;
+        width: 80%;
+        border: 1px solid white;
+        
+    }
+
+    div.gallery > img {
+        width: 16%;
+        border-radius: 15%;
+        padding: 15px;
+        opacity: 0.8;
+        
+        
+    }
+
+    div.gallery > img:hover {
+        opacity: 1;
+    } 
+    div.gallery > img.first-left-img {
+        margin-left: 250px;
+    }
+
+
+
+
+
+
+
+
+

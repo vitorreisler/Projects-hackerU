@@ -6,8 +6,9 @@
 }
 
 
-html, body {
-    width: 98vw;
+ body {
+    margin: 0;
+    width: 96vw;
     background-color: black;
 }
 

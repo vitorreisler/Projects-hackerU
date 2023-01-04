@@ -49,6 +49,19 @@ li > a:hover {
     color: white;
 }
 
+img.easter-egg {
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 430px;
+    opacity: 0;
+}
+
+img.easter-egg:hover {
+    opacity: 1;
+}
+
+
+
 
 
 

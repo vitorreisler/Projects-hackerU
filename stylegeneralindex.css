@@ -41,7 +41,7 @@ li > a {
     border-radius: 10px;
     color: black;
     font-weight: 600;
-    background-color: rgba(172, 255, 47, 0.404);
+    background-color: rgb(172, 255, 47);
 }
 
 li > a:hover {
@@ -54,6 +54,7 @@ img.easter-egg {
     margin-top: 20px;
     margin-left: 430px;
     opacity: 0;
+    transition: .3s .4s;
 }
 
 img.easter-egg:hover {

@@ -10,7 +10,7 @@
         background-color: #1f1f20;
     }
     main {
-        width: 80vw;
+        width: 90vw;
         /*border: 2px solid red;*/
         margin-inline: auto;
         margin-top: 50px;
@@ -38,7 +38,6 @@
 
     main > section.nav a {
         display: block;
-        ;
         line-height: 30px;
         padding: 10px;
         border-radius: 8px;
@@ -55,25 +54,37 @@
     
 
     div.gallery {
-        display: inline-block;
+        display: inline-flex;
         width: 80%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
    
     }
 
-    div.gallery > img {
-        width: 16%;
+    div.teste {
+        display: inline-flex;
+        width: 60%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+   
+    }
+
+    
+
+    div.teste > img {
+        width: 200px;
         border-radius: 15%;
         padding: 15px;
         opacity: 0.8;
          
     }
 
-    div.gallery > img:hover {
+    div.teste > img:hover {
         opacity: 1;
     } 
-    div.gallery > img.first-left-img {
-        margin-left: 250px;
-    }
+
 
 
 
